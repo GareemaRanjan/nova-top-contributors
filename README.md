@@ -1,7 +1,7 @@
 ## Extract 12 most active commit authors from Openstack/Nova - Python3.7
 
 
-## Step 1: Install python dependencies
+## Step 1: Setup python3. Install python dependencies using:
 ```
 pip3 install -r requirements.txt
 ```
