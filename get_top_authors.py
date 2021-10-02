@@ -10,6 +10,7 @@ past_date = datetime.now() - relativedelta(months=6)
 g = Github(login_or_token=sys.argv[1])
 repo = g.get_repo(full_name_or_id='openstack/nova')
 
+print("Starting to collect commits...")
 # Initialise auth_dict to contain list of authors and number of commits.
 auth_dict = dict(No_comm=0)
 for commit in repo.get_commits(since=past_date):
